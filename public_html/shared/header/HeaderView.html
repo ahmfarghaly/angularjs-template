@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default" ng-controller="HeaderController">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">
+                <p>{{ message }}</p> 
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/"><i class="fa fa-home"></i> {{ lang('HomeLabel') }}</a></li>
+            <li><a href="#about"><i class="fa fa-shield"></i> {{ lang('AboutLabel') }}</a></li>
+            <li><a href="#contact"><i class="fa fa-comment"></i> {{lang('ContactLabel')}}</a></li>
+          <li><a href="" ng-click="changeLang()"><span class="glyphicon glyphicon-flag" ></span>{{ langLabel() }}</a></li>
+        </ul>
+    </div>
+</nav>

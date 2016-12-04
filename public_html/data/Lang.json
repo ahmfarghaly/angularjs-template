@@ -1,0 +1,5 @@
+[
+    { "key": "HomeLabel", "ArLabel": "الرئيسية","EnLabel":"Home" },
+    { "key": "AboutLabel", "ArLabel": "من نحن","EnLabel":"About" },
+    { "key": "ContactLabel", "ArLabel": "تواصل معنا","EnLabel":"Contact" }
+]

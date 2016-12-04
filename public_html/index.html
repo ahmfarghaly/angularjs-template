@@ -6,11 +6,33 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="assets/vendors/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/vendors/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/Main.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="assets/libs/angular.js" type="text/javascript"></script>
+        <script src="assets/libs/angular-route.js" type="text/javascript"></script>
+        <script src="assets/libs/angular-cookies.js" type="text/javascript"></script>
+        <script src="assets/libs/angular-touch.js" type="text/javascript"></script>
+        
+        <script src="app.js" type="text/javascript"></script>
+        <script src="shared/header/HeaderController.js" type="text/javascript"></script>
+        <script src="shared/footer/FooterController.js" type="text/javascript"></script>
+        <script src="components/about/AboutController.js" type="text/javascript"></script>
+        <script src="components/contact/ContactController.js" type="text/javascript"></script>
+        <script src="components/home/HomeController.js" type="text/javascript"></script>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body ng-app="app">
+        <div ng-include="'shared/header/HeaderView.html'"></div>
+        <div id="main">
+            <div ng-view></div>
+        </div>
+        <div ng-include="'shared/footer/FooterView.html'"></div>
     </body>
 </html>
